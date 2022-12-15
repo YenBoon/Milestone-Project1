@@ -1,7 +1,7 @@
 :root {
     --primary-color: #5D737E;
     --secondary-color: #D6F8D6;
-    --tertiary-color: #7FC6A4;
+    --tertiary-color: #e3bf09;
     --quaternary-color: #55505C;
     --hover-color: #4e616b;
     --shadow-color:rgba(57, 127, 93, 0.4);
@@ -25,10 +25,6 @@
   
   .mt30 {
     margin-top: 30px;
-  }
-  
-  .header {
-    padding: 15px;
   }
   
   .main {

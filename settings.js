@@ -1,3 +1,5 @@
+import Quiz from "quiz.js";
+
 class Settings {
     constructor() {
         this.quizElement = document.querySelector('.quiz');
@@ -22,9 +24,15 @@ class Settings {
             const categoryId = this.category.value;
             const difficulty = this.getCurrentDifficulty();
 
-            const url = 'https://opentdb.com/api.php?amount=${amount}&category=${categoryId}&difficulty=${difficulty}&type=multiple`;'
-
-            let data = await this.fetchData(url);
+            const urlArray = [ 
+                'https://opentdb.com/api.php?amount=5&category=24&type=multiple', 
+                'https://opentdb.com/api.php?amount=5&category=21&type=multiple', 
+                'https://opentdb.com/api.php?amount=5&category=17&type=multiple', 
+                'https://opentdb.com/api.php?amount=5&category=26&type=multiple', 
+                'https://opentdb.com/api.php?amount=5&category=22&type=multiple'
+            ];
+            
+            let data = await this.fetchData(urlArray[categoryId]);
             this.toggleVisibility();
             this.quiz = new this.quiz(this.quizElement, amount, data.results);
         } catch (error) {
@@ -55,11 +63,11 @@ class Settings {
     }
     getAmount() {
         const amount = this.numberOfQuestions.value;
-        // Not negative, not 0 and not more than 50
-        if (amount > 0 && amount < 51) {
+        // Not negative, not 0 and not more than 10
+        if (amount > 0 && amount < 11) {
             return amount;
         }
-        throw new Error('Please enter a number of questions between 1 and 50!');
+        throw new Error('Please enter a number of questions between 1 and 10!');
     }
 }
 

@@ -1,5 +1,5 @@
-import Final from './final.js';
-import Question from './question.js'
+import Final from 'final.js';
+import Question from 'question.js'
 
 
 class Quiz {
@@ -29,10 +29,8 @@ class Quiz {
     }
 
     nextQuestion() {
-        const chekcedElement = 
-        this.questions[this.answeredAmount].answerElements.filter(el => el.firstChild.checked);
-
-        if(chekcedElement.length === 0) {
+        const checkedElement = this.questions[this.answeredAmount].answerElements.filter(el => el.firstChild.checked);
+        if(checkedElement.length === 0) {
             alert('You need to select an answer');
         } else {
             this.questions[this.answeredAmount].answer(checkedElement)
@@ -43,7 +41,7 @@ class Quiz {
     }
 
     showResult() {
-        this.questions[this.answeredAmount].isCorrect ? alert('Correct answer :)'): alert('Wrong answer :(');
+        this.questions[this.answeredAmount].isCorrect ? alert('Correct! :)'): alert('Try Again :(');
     }
 
     endQuiz() {
@@ -64,4 +62,4 @@ class Quiz {
     }
 }
 
-export default Quiz:
+export default Quiz;

@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben's Trivia Game</title>
-    <script type="text/javascript" src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <div class="header">
-            <h2>Vanilla Quiz</h2>
+            <h2>Ben's Trivia Game</h2>
         </div>
         <div class="main">
             <div class="final">
@@ -46,31 +46,31 @@
                 <h3 style="text-align: center;">Set Up Your Quiz!</h3>
                 <label for="category">Category</label>
                 <select name="category" id="category">
-                    <option value="9">US Presidents</option>
-                    <option value="27">Sports</option>
-                    <option value="15">World Landmarks</option>
-                    <option value="23">Pop Culture</option>
-                    <option value="21">US States/Capitals</option>
+                    <option value="1">Politics</option>
+                    <option value="2">Sports</option>
+                    <option value="3">Science and Nature</option>
+                    <option value="4">Celebrities</option>
+                    <option value="5">Geography</option>
                 </select>
-                <div class="mt30">
-                    <label for="difficulty">Difficulty</label>
-                    <label class="container" style="display: inline; margin-left: 30px;">Easy
-                        <input type="radio" name="radio" id="easy">
-                        <span class="checkmark" style="margin-top: 2px;"></span>
-                    </label>
-                    <label class="container" style="display: inline; margin-left: 30px;">Medium
-                        <input type="radio" name="radio" id="medium">
-                        <span class="checkmark" style="margin-top: 2px;"></span>
-                    </label>
-                    <label  class="container" style="display: inline; margin-left: 30px;">Hard
-                        <input type="radio" name="radio" id="hard">
-                        <span class="checkmark" style="margin-top: 2px;"></span>
-                    </label>
-                </div>
-                <div class="mt30">
-                    <label for="questions">Number of Questions</label>
-                    <input name="questions" id="questions" type="text" pattern="[0-9]*"/>
-                </div>
+            <div class="mt30">
+                <label for="difficulty">Difficulty</label>
+                <label class="container" style="display: inline; margin-left: 30px;">Easy
+                  <input type="radio" name="radio" id="easy">
+                  <span class="checkmark" style="margin-top: 2px;"></span>
+                </label>                    
+                <label class="container" style="display: inline; margin-left: 30px;">Medium
+                    <input type="radio" name="radio" id="medium">
+                  <span class="checkmark" style="margin-top: 2px;"></span>
+                </label>
+                <label  class="container" style="display: inline; margin-left: 30px;">Hard
+                  <input type="radio" name="radio" id="hard">
+                  <span class="checkmark" style="margin-top: 2px;"></span>
+                </label>              
+            </div>
+            <div class="mt30">
+                 <label for="questions">Number of questions</label>
+                 <input name="questions" id="questions" type="text" pattern="[0-9]*" />
+            </div>
                 <button id="start" class="submit">Start</button>
             </div>
         </div>
@@ -78,8 +78,3 @@
     <script type="module" src="index.js"></script>
 </body>
 </html>
-
-<!-- body from 1st tutorial
-<div id="quiz"></div>
-<button id="submit">Get Results</button>
-<div id="results"></div> -->
