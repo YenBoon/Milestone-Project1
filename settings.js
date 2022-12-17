@@ -25,11 +25,11 @@ class Settings {
             const difficulty = this.getCurrentDifficulty();
 
             const urlArray = [ 
-                'https://opentdb.com/api.php?amount=5&category=24&type=multiple', 
-                'https://opentdb.com/api.php?amount=5&category=21&type=multiple', 
-                'https://opentdb.com/api.php?amount=5&category=17&type=multiple', 
-                'https://opentdb.com/api.php?amount=5&category=26&type=multiple', 
-                'https://opentdb.com/api.php?amount=5&category=22&type=multiple'
+                'https://opentdb.com/api.php?amount=10&category=24&type=multiple', 
+                'https://opentdb.com/api.php?amount=10&category=21&type=multiple', 
+                'https://opentdb.com/api.php?amount=10&category=17&type=multiple', 
+                'https://opentdb.com/api.php?amount=10&category=26&type=multiple', 
+                'https://opentdb.com/api.php?amount=10&category=22&type=multiple'
             ];
             
             let data = await this.fetchData(urlArray[categoryId]);
