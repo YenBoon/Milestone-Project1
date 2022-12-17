@@ -1,4 +1,4 @@
-import Quiz from "quiz.js";
+import Quiz from "./quiz.js";
 
 class Settings {
     constructor() {
@@ -13,7 +13,7 @@ class Settings {
         ];
         this.startButton = document.querySelector('#start');
         
-        this.quiz = {};
+        this.quiz = { };
 
         this.startButton.addEventListener('click', this.startQuiz.bind(this));
     }
@@ -34,7 +34,7 @@ class Settings {
             
             let data = await this.fetchData(urlArray[categoryId]);
             this.toggleVisibility();
-            this.quiz = new this.quiz(this.quizElement, amount, data.results);
+            this.quiz = new Quiz(this.quizElement, amount, data.results);
         } catch (error) {
             alert(error);
         }
@@ -63,8 +63,8 @@ class Settings {
     }
     getAmount() {
         const amount = this.numberOfQuestions.value;
-        // Not negative, not 0 and not more than 10
-        if (amount > 0 && amount < 11) {
+        // Not negative, not 0 and not more than 50
+        if (amount > 0 && amount < 51) {
             return amount;
         }
         throw new Error('Please enter a number of questions between 1 and 10!');

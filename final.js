@@ -8,7 +8,7 @@ class Final {
     }
 
     render (count, totalAmount) {
-        this.scoreElement.innerHTML = 'You answered ${count} out of ${totalAmount} correct!';
+        this.scoreElement.innerHTML = `You answered ${count} out of ${totalAmount} correct!`;
     }
 }
 

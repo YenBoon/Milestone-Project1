@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #5D737E;
-    --secondary-color: #D6F8D6;
-    --tertiary-color: #e3bf09;
+    --primary-color: #4a5961;
+    --secondary-color: #8db9f7;
+    --tertiary-color: #e39709;
     --quaternary-color: #55505C;
     --hover-color: #4e616b;
     --shadow-color:rgba(57, 127, 93, 0.4);
-    --font-style: 'Questrial';
+    --font-style: 'Verdana';
   }
   
   body {

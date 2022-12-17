@@ -1,2 +1,2 @@
-import Settings from '.settings.js';
+import Settings from './settings.js';
 new Settings();
