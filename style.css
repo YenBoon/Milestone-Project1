@@ -1,15 +1,14 @@
 :root {
     --primary-color: #1e2427;
-    --secondary-color: #2427cd;
+    --secondary-color: #2426bd;
     --tertiary-color: #e39709;
-    --quaternary-color: #55505C;
+    --quaternary-color: #56515d;
     --hover-color: #4e616b;
-    --shadow-color:rgba(57, 127, 93, 0.4);
     --font-style: 'Verdana';
   }
   
   body {
-    font-family: var(--font-style), 'Ranchers', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--secondary-color);
     width: 100vw;
     height: 100vh;
@@ -59,7 +58,7 @@
   
   #questions {
     font-size: 20px;
-    font-family: var(--font-style), 'Ranchers', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     line-height: 1.3;
     color: white;
@@ -75,7 +74,7 @@
   }
   .settings select {
     font-size: 20px;
-    font-family: var(--font-style), 'Ranchers', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     line-height: 1.3;
     letter-spacing: 1px;
@@ -106,7 +105,7 @@
   
   .settings select option {
     /* font-weight: bolder; */
-    font-family: var(--font-style), 'Ranchers', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .settings label {
@@ -114,16 +113,12 @@
     margin-right: 16px;
   }
   
-  
   .quiz, .settings, .final {
     position: absolute;
     padding: 0px 35px 35px 35px;
     max-width: 560px;
     background-color: var(--tertiary-color);
     border-radius: 7px;
-    -webkit-box-shadow: 10px 10px 3px -4px var(--shadow-color);
-    -moz-box-shadow: 10px 10px 3px -4px var(--shadow-color);
-    box-shadow: 10px 10px 5px -4px var(--shadow-color);
   }
   
   h3 {
@@ -138,7 +133,7 @@
     width: 100%;
     color: white;
     background-color: var(--primary-color);
-    font-family: var(--font-style), 'Ranchers', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     outline: none;
     border: none;
     height: 50px;
@@ -208,12 +203,12 @@
   
   /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
-    background-color: #FAF33E;
+    background-color: #56515d;
   }
   
   /* When the radio button is checked, add a blue background */
   .container input:checked ~ .checkmark {
-    background-color: var(--quaternary-color);
+    background-color: #2426bd;
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
